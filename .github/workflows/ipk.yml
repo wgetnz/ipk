@@ -1,14 +1,14 @@
 name: ipk
 
-on:
-  repository_dispatch:
+on: 
+  push:
+  pull_request:
   workflow_dispatch:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
         required: false 
         default: 'false'
-        
   schedule:
    # - cron: 0 3 * * *
 
